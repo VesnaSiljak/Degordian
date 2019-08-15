@@ -1,0 +1,399 @@
+@import "variables.scss";
+
+body {
+  margin: 0;
+  font-family: $main-font;
+}
+.first-section {
+  background-image: url("../img/bitmap.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-sizing: border-box;
+  -scss-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: background-image 0.2s ease-out;
+  -moz-transition: background-image 0.2s ease-out;
+  -o-transition: background-image 0.2s ease-out;
+  transition: background-image 0.2s ease-out;
+
+  &__arrows {
+    width: 23px;
+    height: 23px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+
+    @media #{$ipadpro} {
+      display: none;
+    }
+
+    &.right-arrow {
+      right: 15px;
+      background-image: url(../static/icons/rarrow.svg);
+
+      &:hover {
+        background-image: url(../static/icons/rarrow-active.svg);
+      }
+    }
+    &.left-arrow {
+      left: 15px;
+      background-image: url(../static/icons/larrow.svg);
+
+      &:hover {
+        background-image: url(../static/icons/larrow-active.svg);
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    color: $white;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 300px;
+
+    @media #{$ipadpro} {
+      padding-top: 0px;
+    }
+
+    @media #{$iphone} {
+      font-size: 21px;
+    }
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    @media #{$ipadpro} {
+      display: block;
+    }
+
+    input {
+      background-image: url("../static/icons/pin.svg");
+      background-repeat: no-repeat;
+      padding: 20px 20px;
+      width: 400px;
+      border-radius: 5px;
+      border: none;
+      background-position: 95% 60%;
+      color: $light-grey;
+      font-size: 16px;
+      margin-right: 10px;
+      font-weight: 300;
+
+      @media #{$ipadpro} {
+        display: block;
+        width: 260px;
+        margin: 0 auto 12px auto;
+        -webkit-box-sizing: border-box;
+        -scss-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      &placeholder {
+        font-size: 16px;
+        font-family: $sans-pro;
+        color: $light-grey;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    select {
+      background-image: url("../static/icons/input-arrow.svg");
+      margin-right: 10px;
+      padding: 20px 15px;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      font-size: 16px;
+      color: $light-grey;
+      font-family: $sans-pro;
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
+      font-weight: 300;
+      cursor: pointer;
+
+      @media #{$ipadpro} {
+        display: block;
+        width: 260px;
+        margin: 0 auto 12px auto;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      padding: 20px 30px;
+      border: none;
+      border-radius: 5px;
+      width: 177px;
+      font-size: 16px;
+      color: $white;
+      background-color: $azure;
+      font-weight: 400;
+      background-image: url("../static/icons/search.svg");
+      background-repeat: no-repeat;
+      background-position: 15% 45%;
+      cursor: pointer;
+
+      @media #{$ipadpro} {
+        display: block;
+        width: 260px;
+        margin: 0 auto 12px auto;
+        -webkit-box-sizing: border-box;
+        -scss-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $azure-hover;
+      }
+    }
+  }
+
+  &__bullets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    span {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 40px;
+      background: $white;
+      cursor: pointer;
+
+      &.active {
+        background: $azure;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .banner {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: 726px;
+    height: 88px;
+    background: black;
+    border: solid 1px $white;
+
+    @media #{$ipadpro} {
+      width: 300px;
+      height: 50px;
+    }
+  }
+}
+
+.second-section {
+  background-image: url("../img/section-two.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media #{$ipadpro} {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media #{$iphone5} {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__content {
+    padding-left: 145px;
+
+    @media #{$ipadpro} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    h2 {
+      font-size: 38px;
+      font-weight: 300;
+      color: $white;
+      margin: 0;
+
+      @media #{$iphone5} {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-size: 22px;
+      color: $white;
+      font-weight: 300;
+      width: 860px;
+
+      @media #{$ipad} {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      @media #{$iphone5} {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      font-size: 18px;
+      padding: 15px 75px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 30px;
+      color: $white;
+      background: $azure;
+      cursor: pointer;
+
+      @media #{$ipad} {
+        margin-top: 40px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: $azure-hover;
+      }
+    }
+  }
+}
+
+.third-section {
+  &__big-banner {
+    display: block;
+    margin: 100px auto;
+    width: 970px;
+    height: 250px;
+    max-width: 100%;
+    background: black;
+
+    @media #{$ipadpro} {
+      max-width: 100%;
+      margin: 70px auto;
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    @media #{$ipadpro} {
+      padding-left: 30px;
+      padding-right: 30px;
+      display: block;
+    }
+
+    &__right-side {
+      margin-left: 100px;
+
+      @media #{$ipadpro} {
+        margin-left: 0px;
+        margin-top: 60px;
+      }
+
+      & > img {
+        max-width: 100%;
+      }
+    }
+
+    &__left-side {
+      h3 {
+        font-size: 36px;
+        font-weight: 300;
+        color: $dark-grey;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        width: 470px;
+        max-width: 100%;
+
+        @media #{$iphone5} {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        font-family: $main-font;
+        font-weight: 300;
+        color: $light-grey;
+        margin-bottom: 30px;
+
+        @media #{$iphone5} {
+          font-size: 14px;
+        }
+
+        &:last-of-type {
+          font-size: 18px;
+          font-family: $open-sans;
+          font-weight: 300;
+          color: $dark-grey;
+          width: 550px;
+
+          @media #{$ipadpro} {
+            width: 100%;
+          }
+
+          @media #{$iphone5} {
+            font-size: 14px;
+          }
+        }
+      }
+
+      button {
+        padding: 20px 75px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        color: $white;
+        background: $dark-blue;
+        cursor: pointer;
+
+        @media #{$iphone5} {
+          padding: 20px 50px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: $light-blue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pricing</title>
+    <link rel="stylesheet" href="dist/style.min.css" />
+    <script src="dist/script.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header pricing">
+      <!-- build:section layout.header -->
+      <!-- /build -->
+    </header>
+
+    <section class="pricing__top-content">
+      <h1>Choose your plan</h1>
+    </section>
+    <p class="pricing__subtext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <section class="pricing__packages">
+      <div class="pricing__packages__info">
+        <div class="pricing__packages__info__item">
+          <div class="pricing__packages__info__item__box bill">
+            <p class="top-text">
+              <span id="monthly">Bill monthly</span> /
+              <span id="yearly" class="active">Bill yearly</span>
+            </p>
+            <div id="trigger" onclick="switchPrice()" class="switch">
+              <div></div>
+            </div>
+            <p class="bottom-text">Save 35%</p>
+          </div>
+        </div>
+        <div class="pricing__packages__info__item">
+          <div class="pricing__packages__info__item__box package1">
+            <h2><span></span> Single property</h2>
+            <p class="pricing__packages__info__item__box__feature">
+              1 Property
+            </p>
+            <p class="pricing__packages__info__item__box__oldprice">350 €</p>
+            <p class="pricing__packages__info__item__box__price">175 €</p>
+          </div>
+          <button class="pricing__packages__info__item__button green-bttn bttn">
+            Buy/Register
+          </button>
+
+          <div class="pricing__packages__info__item__mobilebox">
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Unit</p>
+              <p class="unit">1</p>
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Custom Logo</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Photos</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Video</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Support Email</p>
+              <img src="/static/icons/close.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Advanced</p>
+              <img src="/static/icons/close.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <button
+                class="pricing__packages__info__item__button green-bttn bttn"
+              >
+                Buy/Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__packages__info__item">
+          <div class="pricing__packages__info__item__box package2">
+            <h2><span></span> New Development</h2>
+            <p class="pricing__packages__info__item__box__feature">
+              > 30 Units
+            </p>
+            <p class="pricing__packages__info__item__box__oldprice">708 €</p>
+            <p class="pricing__packages__info__item__box__price">545 €</p>
+          </div>
+          <button
+            class="pricing__packages__info__item__button light-orange-bttn bttn"
+          >
+            Buy/Register
+          </button>
+
+          <div class="pricing__packages__info__item__mobilebox">
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Unit</p>
+              <p class="unit">>30</p>
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Custom Logo</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Photos</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Video</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Support Email</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Advanced</p>
+              <img src="/static/icons/close.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <button
+                class="pricing__packages__info__item__button light-orange-bttn bttn"
+              >
+                Buy/Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__packages__info__item">
+          <div class="pricing__packages__info__item__box package3">
+            <h2><span></span> New development</h2>
+            <p class="pricing__packages__info__item__box__feature">
+              Unlimited
+            </p>
+            <p class="pricing__packages__info__item__box__oldprice">1079 €</p>
+            <p class="pricing__packages__info__item__box__price">830 €</p>
+          </div>
+          <button
+            class="pricing__packages__info__item__button dark-orange-bttn bttn"
+          >
+            Buy/Register
+          </button>
+          <div class="pricing__packages__info__item__mobilebox">
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Unit</p>
+              <p class="unit">Unlimited</p>
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Custom Logo</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Photos</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Video</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Support Email</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <p>Advanced</p>
+              <img src="/static/icons/check.svg" alt="" />
+            </div>
+            <div class="pricing__packages__info__item__mobilebox__block">
+              <button
+                class="pricing__packages__info__item__button dark-orange-bttn bttn"
+              >
+                Buy/Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pricing__packages__table">
+        <div class="pricing__packages__table__item">
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Unit</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Custom Logo</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Photos</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Video</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Support Email</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <span></span>
+            <p>Advanced</p>
+          </div>
+          <div class="pricing__packages__table__item__block"></div>
+        </div>
+        <div class="pricing__packages__table__item">
+          <div class="pricing__packages__table__item__block">
+            <p>1</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/close.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/close.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <p class="azure">175 €</p>
+            <button class="green-bttn bttn">
+              Buy/Register
+            </button>
+          </div>
+        </div>
+        <div class="pricing__packages__table__item">
+          <div class="pricing__packages__table__item__block">
+            <p>>30</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/close.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <p class="light-orange">175 €</p>
+            <button class="light-orange-bttn bttn">
+              Buy/Register
+            </button>
+          </div>
+        </div>
+        <div class="pricing__packages__table__item">
+          <div class="pricing__packages__table__item__block">
+            <p>Unlimited</p>
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <img src="/static/icons/check.svg" alt="" />
+          </div>
+          <div class="pricing__packages__table__item__block">
+            <p class="dark-orange">175 €</p>
+            <button class="dark-orange-bttn bttn">
+              Buy/Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pricing__howitworks">
+      <div class="pricing__howitworks__content">
+        <h3>See how it works Listing Packages</h3>
+        <p>
+          Your New development may have a numerous of units for sale or even
+          under your development, you propose different type of properties (i).
+          Here you will have the ideal package giving you the freedom to include
+          unlimited units whatever the status (i) of your development is. This
+          extended option will enable you to load as many units as you deem
+          necessary, whatever the number of properties registered.
+        </p>
+      </div>
+      <div class="pricing__howitworks__video">
+        <div>
+          <img src="static/icons/play.svg" alt="play" />
+        </div>
+        <p>Watch our video to see how it works</p>
+      </div>
+    </section>
+
+    <!-- build:section layout.footer -->
+    <!-- /build -->
+  </body>
+</html>

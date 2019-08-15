@@ -1,0 +1,195 @@
+@import "variables.scss";
+
+.header {
+  position: absolute;
+  display: flex;
+  padding: 30px 20px;
+  font-size: 18px;
+  color: $white;
+  width: 100%;
+  justify-content: space-between;
+  -webkit-box-sizing: border-box;
+  -scss-box-sizing: border-box;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 1;
+
+  @media #{$ipadpro} {
+    position: relative;
+    background: $dark-blue;
+    padding: 5px 20px;
+  }
+
+  &__navigation {
+    display: flex;
+
+    &__logo {
+      margin-right: 10px;
+    }
+
+    nav {
+      @media #{$ipadpro} {
+        position: absolute;
+        top: 57px;
+        width: 100%;
+        background: $dark-blue;
+        left: 0px;
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        @media #{$ipadpro} {
+          display: block;
+        }
+
+        li {
+          margin-left: 30px;
+
+          @media #{$ipadpro} {
+            padding-top: 5px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $white;
+            font-weight: 100;
+
+            &:hover {
+              color: $light-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > button {
+    padding: 0px 25px;
+    background: transparent;
+    color: white;
+    height: 50px;
+    border: solid 1px $azure;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: $main-font;
+    font-weight: 300;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: $azure;
+      color: $dark-blue;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+
+    @media #{$ipadpro} {
+      display: none;
+    }
+  }
+
+  &__right-action {
+    display: flex;
+
+    &__login {
+      margin-right: 40px;
+      text-decoration: none;
+      font-size: 16px;
+      color: $white;
+      font-weight: 100;
+
+      @media #{$ipadpro} {
+        display: none;
+      }
+
+      span {
+        padding-right: 4px;
+      }
+
+      img {
+        width: 14px;
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+      }
+    }
+
+    &__lng {
+      display: flex;
+      align-items: center;
+
+      img {
+        &:last-child {
+          margin-left: 1px;
+          position: relative;
+          cursor: pointer;
+        }
+      }
+
+      @media #{$ipadpro} {
+        display: none;
+      }
+    }
+
+    &__wishlist {
+      display: none;
+      margin-right: 30px;
+      align-items: center;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    &__user {
+      display: none;
+      margin-right: 30px;
+    }
+
+    &__menu {
+      display: none;
+      @media #{$ipadpro} {
+        display: flex;
+      }
+    }
+  }
+  &.pricing {
+    position: relative;
+    background: $dark-blue;
+    padding: 5px 20px;
+
+    .header__right-action {
+      &__login {
+        display: none;
+      }
+
+      &__wishlist {
+        display: flex;
+
+        @media #{$ipadpro} {
+          display: none;
+        }
+      }
+      &__user {
+        display: block;
+
+        @media #{$ipadpro} {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Documentic</title>
+
+    <link rel="stylesheet" href="dist/style.min.css" />
+    <script src="dist/script.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- build:section layout.header -->
+      <!-- /build -->
+    </header>
+
+    <section class="first-section" id="slider">
+      <div>
+        <div
+          class="first-section__arrows right-arrow"
+          onclick="changeByArrow('next',true)"
+        ></div>
+        <div
+          class="first-section__arrows left-arrow"
+          onclick="changeByArrow('previous',true)"
+        ></div>
+        <h1>
+          Explore beauties of <br />
+          Montenegro - Bay of Kotor
+        </h1>
+        <div class="first-section__search">
+          <input
+            type="text"
+            name="search"
+            id=""
+            placeholder="Location or Project name"
+          />
+          <select name="property" id="">
+            <option value="">Type of property</option>
+          </select>
+          <button>Search</button>
+        </div>
+        <div class="first-section__bullets">
+          <span class="bullet active" onclick="changeBg(0)"></span>
+          <span class="bullet" onclick="changeBg(1)"></span>
+          <span class="bullet" onclick="changeBg(2)"></span>
+        </div>
+        <div class="banner"></div>
+      </div>
+    </section>
+    <section class="second-section">
+      <div class="second-section__content">
+        <h2>
+          Novogradnja <br />
+          Secure. Innovative. International
+        </h2>
+        <p>
+          You are developing a Building, a Resort, a Condo Hotel Whatever the
+          type of properties are included in your development Located in
+          Croatia, in Montenegro, in Serbia It Has Its Place Here! You are
+          developing a Building, a Resort, a Condo Hotel Whatever the type of
+          properties are included in your development Located in Croatia, in
+          Montenegro, in Serbia It Has Its Place
+        </p>
+        <button>More about</button>
+      </div>
+    </section>
+    <section class="third-section">
+      <div class="third-section__big-banner"></div>
+      <div class="third-section__content-wrapper">
+        <div class="third-section__content-wrapper__left-side">
+          <h3>Have a property that you would like to advertise?</h3>
+          <p>We have a quick and easy solution for you</p>
+          <p>
+            You are developing a Building, a Resort, a Condo Hotel Whatever the
+            type of properties are included in your development Located in
+            Croatia, in Montenegro, in Serbia It Has Its Place Here!
+          </p>
+          <button>List your property</button>
+        </div>
+        <div class="third-section__content-wrapper__right-side">
+          <img src="img/laptop.png" alt="laptop" />
+        </div>
+      </div>
+    </section>
+    <!-- build:section layout.footer -->
+    <!-- /build -->
+  </body>
+</html>
